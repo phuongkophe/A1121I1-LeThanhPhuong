@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 8: Game đoán số-->
+    <input type="button" onclick="randomGame()" value="Play">
+    <script>
+        function randomGame() {
+            let startNumber = parseInt(prompt("Number guessing game: enter start number: "));
+            let lastNumber = parseInt(prompt("Number guessing game: enter last number: "));
+            let number = Math.floor(Math.random()*(lastNumber - startNumber) + 1)+ startNumber;
+            let i = 1;
+            for (i; i <= 3; i++) {
+                let guessNumber = parseInt(prompt(`Pick a number (${4-i} turn left) (${startNumber} - ${lastNumber}):`));
+                if (guessNumber === number) {
+                    alert("You win!!!");
+                    break;
+                }else if (guessNumber > number){
+                    alert("The exact number is SMALLER");
+                }else if (guessNumber < number){
+                    alert("The exact number is GREATER");
+                }// else {
+                   //  alert("You lose :(");
+                 //}
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/bài tập.iml" filepath="$PROJECT_DIR$/.idea/bài tập.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ss10_loop_structure_1/.idea/ss10_loop_structure_1.iml" filepath="$PROJECT_DIR$/../../ss10_loop_structure_1/.idea/ss10_loop_structure_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../ss9_condition_structure_2/.idea/ss9_condition_structure_2.iml" filepath="$PROJECT_DIR$/../../ss9_condition_structure_2/.idea/ss9_condition_structure_2.iml" />
+    </modules>
+  </component>
+</project>

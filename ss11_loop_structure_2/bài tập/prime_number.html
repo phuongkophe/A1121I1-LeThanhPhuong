@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        let numbers =prompt("Nhập vào số lượng số nguyên tố")
+        if (numbers>0){
+            var N=2;
+            var count=0
+            while (count<numbers)
+            {
+                var ngto=true;
+                for (i=2;i<=Math.sqrt(N);i++)
+                {
+                    if(N%i==0)
+                    {
+                        ngto=false;
+                        break;
+                    }
+                }
+                if(ngto)
+                {
+                    alert(N+" " );
+                    count++;
+                }
+                N++;
+            }
+        }
+        else {
+            alert("Không hợp lệ");
+        }
+    </script>
+</body>
+</html>

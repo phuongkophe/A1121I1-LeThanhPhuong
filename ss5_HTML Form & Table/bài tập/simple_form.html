@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <style>
+        #1{
+            border:1px;
+            text-align: center;
+        }
+        #hobby{
+            color: orangered;
+        }
+        #th1{
+            background:orangered;
+            color: white;
+            text-align: center;
+        }
+        #th2{
+            background: aquamarine;
+        }
+    </style>
+<body>
+<form action="#" method="post">
+    <table id="1">
+        <tr>
+            <th colspan="4" id="th1">SỞ THÍCH CỦA BẠN</th>
+        </tr>
+        <tr>
+            <td style="color: blue">Họ và tên </td>
+            <td><input type="text" name="yourname"></td>
+        </tr>
+        <tr>
+            <td style="color: blue">Email</td>
+            <td><input type="email" name="email"></td>
+
+        </tr>
+        <tr>
+            <td style="color: blue">Sở thích</td>
+        </tr>
+
+       <table id="hobby">
+           <tr>
+               <td><input type="checkbox">Thể thao</td>
+               <td><input type="checkbox">Âm nhạc</td>
+               <td><input type="checkbox">Đọc sách</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox">Lướt web</td>
+               <td><input type="checkbox">Chơi game</td>
+               <td><input type="checkbox">Điện ảnh</td>
+           </tr>
+           <tr>
+               <td><input type="checkbox">Du lịch</td>
+           </tr>
+           <tr>
+               <td><button type="submit">Gửi thông tin</button></td>
+               <td><button type="reset">Nhập lại</button></td>
+           </tr>
+       </table>
+    </table>
+</form>
+
+<!--Phần 2: Tạo một form đăng ký học viên-->
+<form action="#" method="post">
+    <table>
+        <tr>
+            <th id="th2">ĐĂNG KÝ HỌC VIÊN</th>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" name="yourname" size="35px"></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td><input type="radio">Nam <input type="radio">Nữ</td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><input type="text" size="30px" style="height: 60px"></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td><select><option value="">--Chọn lớp--</option></select></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td>Điện thoại</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td id="btn_2"><button type="submit">Đăng ký</button><button type="reset">Nhập lại</button</td>
+    </table>
+</form>
+</body>
+</html>
