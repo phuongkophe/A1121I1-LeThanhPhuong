@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="">
+        <div>Enter a word you want to search:</div>
+        <input type="text" id="word">
+        <input type="button" value="Search" onclick="search()">
+        <p id="display"></p>
+    </form>
+    <script>
+        let arrEng = ['red','eye','ghost','handsome'];
+        let arrVn = ['đỏ','mắt','ma','Phương'];
+        function search() {
+            let check = false;
+            let text = document.getElementById('word').value;
+            for (let i=0; i<arrEng.length;i++){
+                if (arrEng[i] === text){
+                    document.getElementById('display').innerHTML='Your word in Vietnamese is '+ arrVn[i];
+                    break;
+                }
+            }if (check){
+                document.getElementById('display').innerHTML='Not found';
+            }
+        }
+    </script>
+</body>
+</html>

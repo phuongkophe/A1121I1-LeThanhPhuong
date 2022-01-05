@@ -12,20 +12,23 @@
             let startNumber = parseInt(prompt("Number guessing game: enter start number: "));
             let lastNumber = parseInt(prompt("Number guessing game: enter last number: "));
             let number = Math.floor(Math.random()*(lastNumber - startNumber) + 1)+ startNumber;
+            let checkLose = true;
             let i = 1;
             for (i; i <= 3; i++) {
                 let guessNumber = parseInt(prompt(`Pick a number (${4-i} turn left) (${startNumber} - ${lastNumber}):`));
                 if (guessNumber === number) {
                     alert("You win!!!");
+                    checkLose = false;
                     break;
                 }else if (guessNumber > number){
                     alert("The exact number is SMALLER");
-                }else if (guessNumber < number){
+                }else{
                     alert("The exact number is GREATER");
-                }// else {
-                   //  alert("You lose :(");
-                 //}
-            }
+                }
+            }if (checkLose){
+                alert("Good luck next time （；´д｀）ゞ")
+        }
+
         }
     </script>
 </body>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ss14_function_1.iml" filepath="$PROJECT_DIR$/.idea/ss14_function_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ss15_function_2/.idea/ss15_function_2.iml" filepath="$PROJECT_DIR$/../ss15_function_2/.idea/ss15_function_2.iml" />
+    </modules>
+  </component>
+</project>
