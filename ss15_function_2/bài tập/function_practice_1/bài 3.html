@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkNum(num1,num2) {
+            let result = 0;
+            if (num1>num2){
+                alert('The first number is larger')
+            }else{
+                result = num1 + num2;
+                alert('Summary of ' +num1+ ' + ' +num2+ ' = ' + result );
+            }
+            return result;
+        }
+        let num1 = parseInt(prompt("Enter first number"));
+        let num2 = parseInt(prompt("Enter second number"));
+        let output = checkNum(num1,num2);
+    </script>
+</body>
+</html>

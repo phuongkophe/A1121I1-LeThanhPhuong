@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Date {
+            constructor(day,month,year) {
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            }
+            getDay(){
+                return this.day;
+            }
+            setDay(day){
+                this.day = day;
+            }
+            getMonth(){
+                return this.month;
+            }
+            setMonth(month){
+                this.month= month;
+            }
+            getYear(){
+                return this.year;
+            }
+            setYear(year){
+                this.year= year;
+            }
+        }
+        let date_1 = new Date(1,10,2022);
+        alert(date_1.getDay()+'/'+date_1.getMonth()+'/'+date_1.getYear());
+        date_1.setDay(23);
+        date_1.setMonth(6);
+        date_1.getYear(2002);
+        alert(date_1.getDay()+'/'+date_1.getMonth()+'/'+date_1.getYear());
+    </script>
+</body>
+</html>
